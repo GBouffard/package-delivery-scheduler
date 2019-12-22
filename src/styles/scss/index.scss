@@ -64,7 +64,7 @@ body {
 }
 
 .delivery-option__text-container {
-  font-size: 12px;
+  @include smallFont;
   padding: 11px 0 11px 60px;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .delivery-option__link {
   position: absolute;
-  font-size: 12px;
+  @include smallFont;
   color: blue;
   top: 18px;
   right: 15px;
@@ -87,4 +87,20 @@ body {
 .company-logo-style {
   width: 100px;
   margin: 20px;
+}
+
+#out-for-delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#out-for-delivery__label {
+  @include smallFont;
+}
+
+#out-for-delivery__time {
+  font-size: 24px;
+  font-weight: bold;
 }

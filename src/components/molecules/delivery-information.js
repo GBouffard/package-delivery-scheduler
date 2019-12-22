@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "../atoms/image";
+import OutForDeliveryTime from "./out-for-delivery-time";
 
 const baseUrl = process.env.PUBLIC_URL;
 
@@ -11,7 +12,7 @@ const DeliveryInformation = () => (
       altName="FedEx logo"
       imageClass="company-logo-style"
     />
-    <div>Out for delivery time</div>
+    <OutForDeliveryTime from="13:30" to="14:40" />
   </div>
 );
 
