@@ -13,19 +13,21 @@ body {
 }
 
 #delivery-footer {
+  position: absolute;
+  bottom: 0;
   background: blue;
   width: 300px;
   height: 200px;
-  display: none;
 }
 
 .delivery-option {
   position: relative;
   background: white;
   height: 50px;
-  width: 300px;
+  width: 280px;
   border: 1px solid grey;
   border-radius: 5px;
+  margin: 5px 0;
 }
 
 .icon-container {

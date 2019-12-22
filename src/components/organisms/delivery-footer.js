@@ -1,7 +1,7 @@
 import React from "react";
 
-import DeliveryAddress from "./delivery-address";
-import DeliveryNotification from "./delivery-notification";
+import DeliveryAddress from "../molecules/delivery-address";
+import DeliveryNotification from "../molecules/delivery-notification";
 
 const DeliveryFooter = () => (
   <div id="delivery-footer">
