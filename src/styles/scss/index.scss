@@ -1,3 +1,6 @@
+@import "constants";
+@import "mixins";
+
 body {
   position: absolute;
   height: 100%;
@@ -7,28 +10,35 @@ body {
 }
 
 #delivery-header {
-  background: red;
-  width: 300px;
-  height: 200px;
+  background: $contentBackground;
+  @include contentContainerStyle;
 }
 
 #delivery-footer {
+  background: $contentBackground;
   position: absolute;
+  @include contentContainerStyle;
   bottom: 0;
-  background: blue;
-  width: 300px;
-  height: 200px;
 }
 
 .delivery-option {
   position: relative;
-  background: white;
+  background: $white;
   height: 50px;
   width: 280px;
-  border: 1px solid grey;
+  border: 1px solid $lightGreyLines;
   border-radius: 5px;
-  margin: 5px 0;
+  margin: 5px auto;
 }
+
+// with delivery-header
+// position: relative;
+
+// last option
+// position: absolute;
+// left: 50%;
+// transform: translateX(-50%);
+// bottom: 0;
 
 .icon-container {
   position: relative;
@@ -38,7 +48,7 @@ body {
 
 .delivery-option__icon {
   position: absolute;
-  background: white;
+  background: $white;
 }
 
 .question-mark-icon {
@@ -56,7 +66,7 @@ body {
 }
 
 .subText {
-  color: grey;
+  color: $greyLinesColor;
 }
 
 .delivery-option__link {

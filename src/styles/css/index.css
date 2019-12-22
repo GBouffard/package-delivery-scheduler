@@ -7,17 +7,23 @@ body {
 }
 
 #delivery-header {
-  background: red;
+  background: whitesmoke;
   width: 300px;
   height: 200px;
+  padding: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 8px grey;
 }
 
 #delivery-footer {
+  background: whitesmoke;
   position: absolute;
-  bottom: 0;
-  background: blue;
   width: 300px;
   height: 200px;
+  padding: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 8px grey;
+  bottom: 0;
 }
 
 .delivery-option {
@@ -25,9 +31,9 @@ body {
   background: white;
   height: 50px;
   width: 280px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   border-radius: 5px;
-  margin: 5px 0;
+  margin: 5px auto;
 }
 
 .icon-container {

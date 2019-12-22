@@ -12,6 +12,7 @@ const DeliveryOption = ({ icons, text, subtext, link }) => (
       icons.map(({ name, isFar, isSmall }) => (
         <Icon
           iconClass={`${classname}__icon`}
+          key={name}
           name={name}
           isFar={isFar}
           isSmall={isSmall}
