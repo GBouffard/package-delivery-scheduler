@@ -2,6 +2,7 @@ import React from "react";
 
 import Icon from "../../atoms/icon";
 import Text from "../../atoms/text";
+import Link from "../../atoms/link";
 
 const classname = "delivery-option";
 
@@ -24,6 +25,8 @@ const DeliveryOption = ({ icons, text, subtext, link }) => (
         textClass={`${classname}__text-container`}
       />
     )}
+
+    {link && <Link link={link} linkClass={`${classname}__link`} />}
   </div>
 );
 
