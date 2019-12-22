@@ -7,12 +7,18 @@ body {
   width: 100%;
   background: lightgreen;
   font-family: sans-serif;
+  margin: 0;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    margin: 8px;
+  }
 }
 
 #delivery-header {
-  background: $contentBackground;
   @include contentContainerStyle;
-  margin: 10px 0 0 10px;
+  @media screen and (min-width: $mobileBreakpoint) {
+    margin: 10px 0 0 10px;
+  }
 }
 
 #desktop-filler__container {
@@ -23,47 +29,59 @@ body {
 }
 
 #desktop-filler__fill {
-  position: relative;
-  background: $contentBackground;
-  width: 300px;
-  box-shadow: 0 0 8px $greyLinesColor;
-  height: 100%;
-  z-index: 100;
+  display: none;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    display: block;
+    position: relative;
+    background: $contentBackground;
+    width: 300px;
+    box-shadow: 0 0 8px $greyLinesColor;
+    height: 100%;
+    z-index: 100;
+  }
 }
 
 #delivery-footer {
-  background: $contentBackground;
   position: absolute;
-  @include contentContainerStyle;
+  width: 100%;
+  padding-top: 10px;
   bottom: 0;
-  margin: 0 0 10px 10px;
+
+  @include contentContainerStyle;
+  @media screen and (min-width: $mobileBreakpoint) {
+    margin: 0 0 10px 10px;
+  }
 }
 
 #delivery-information {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  padding: 20px 10px;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .delivery-option {
   position: relative;
   background: $white;
   height: 50px;
-  width: 280px;
+  width: auto;
   border: 1px solid $lightGreyLines;
   border-radius: 5px;
-  margin: 5px auto;
+  margin: 5px 10px;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    width: 280px;
+    margin: 5px auto;
+  }
 }
-
-// with delivery-header
-// position: relative;
-
-// last option
-// position: absolute;
-// left: 50%;
-// transform: translateX(-50%);
-// bottom: 0;
 
 .icon-container {
   position: relative;
@@ -104,14 +122,23 @@ body {
 
 .company-logo-style {
   width: 100px;
-  margin: 20px;
+  margin: 0;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    margin: 20px;
+  }
 }
 
 #out-for-delivery {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: start;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 #out-for-delivery__label {

@@ -4,15 +4,30 @@ body {
   width: 100%;
   background: lightgreen;
   font-family: sans-serif;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+  body {
+    margin: 8px;
+  }
 }
 
 #delivery-header {
   background: whitesmoke;
-  width: 300px;
-  padding: 5px 0;
-  border-radius: 5px;
   box-shadow: 0 0 8px grey;
-  margin: 10px 0 0 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  #delivery-header {
+    width: 300px;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #delivery-header {
+    margin: 10px 0 0 10px;
+  }
 }
 
 #desktop-filler__container {
@@ -23,40 +38,71 @@ body {
 }
 
 #desktop-filler__fill {
-  position: relative;
-  background: whitesmoke;
-  width: 300px;
-  box-shadow: 0 0 8px grey;
-  height: 100%;
-  z-index: 100;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  #desktop-filler__fill {
+    display: block;
+    position: relative;
+    background: whitesmoke;
+    width: 300px;
+    box-shadow: 0 0 8px grey;
+    height: 100%;
+    z-index: 100;
+  }
 }
 
 #delivery-footer {
-  background: whitesmoke;
   position: absolute;
-  width: 300px;
-  padding: 5px 0;
-  border-radius: 5px;
-  box-shadow: 0 0 8px grey;
+  width: 100%;
+  padding-top: 10px;
   bottom: 0;
-  margin: 0 0 10px 10px;
+  background: whitesmoke;
+  box-shadow: 0 0 8px grey;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  #delivery-footer {
+    width: 300px;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #delivery-footer {
+    margin: 0 0 10px 10px;
+  }
 }
 
 #delivery-information {
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 480px) {
+  #delivery-information {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .delivery-option {
   position: relative;
   background: white;
   height: 50px;
-  width: 280px;
+  width: auto;
   border: 1px solid lightgrey;
   border-radius: 5px;
-  margin: 5px auto;
+  margin: 5px 10px;
+}
+@media screen and (min-width: 480px) {
+  .delivery-option {
+    width: 280px;
+    margin: 5px auto;
+  }
 }
 
 .icon-container {
@@ -98,14 +144,25 @@ body {
 
 .company-logo-style {
   width: 100px;
-  margin: 20px;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .company-logo-style {
+    margin: 20px;
+  }
 }
 
 #out-for-delivery {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: start;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 480px) {
+  #out-for-delivery {
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 #out-for-delivery__label {
