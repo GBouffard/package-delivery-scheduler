@@ -26,6 +26,13 @@ body {
   bottom: 0;
 }
 
+#delivery-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .delivery-option {
   position: relative;
   background: white;
@@ -71,6 +78,11 @@ body {
   color: blue;
   top: 18px;
   right: 15px;
+}
+
+.company-logo-style {
+  width: 100px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
