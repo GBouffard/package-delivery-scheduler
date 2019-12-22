@@ -16,4 +16,24 @@ body {
   background: blue;
   width: 300px;
   height: 200px;
+  display: none;
+}
+
+.delivery-option {
+  position: relative;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-option__icon {
+  position: absolute;
+  background: white;
+}
+
+.question-mark-icon {
+  bottom: -3px;
 }

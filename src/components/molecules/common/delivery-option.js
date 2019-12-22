@@ -1,17 +1,20 @@
 import React from "react";
 
 import Icon from "../../atoms/icon";
-import Text from "../../atoms/text";
-import Link from "../../atoms/link";
 
-const DeliveryOption = ({ icon, text, subtext, link }) => (
-  <div>
-    {icon && <Icon />}
-    <div>
-      {text && <Text />}
-      {subtext && <Text isSubtext />}
-    </div>
-    {link && <Link />}
+const classname = "delivery-option";
+
+const DeliveryOption = ({ icons, text, subtext, link }) => (
+  <div className={classname}>
+    {icons &&
+      icons.map(({ name, isFar, isSmall }) => (
+        <Icon
+          iconClass={`${classname}__icon`}
+          name={name}
+          isFar={isFar}
+          isSmall={isSmall}
+        />
+      ))}
   </div>
 );
 

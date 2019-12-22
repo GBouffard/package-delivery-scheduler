@@ -10,7 +10,6 @@ import {
   faCommentAlt,
   faQuestion
 } from "@fortawesome/free-solid-svg-icons";
-// faPen, faMapMarker
 
 library.add(
   fas,
@@ -22,8 +21,14 @@ library.add(
   faQuestion
 );
 
-const Icon = ({ name, isFar }) => (
-  <FontAwesomeIcon icon={[isFar ? "far" : "fas", name]} />
+const Icon = ({ name, isFar, isSmall, iconClass }) => (
+  <div className="icon-container">
+    <FontAwesomeIcon
+      size={isSmall ? "xs" : "2x"}
+      className={`${iconClass} ${isSmall ? "question-mark-icon" : ""}`}
+      icon={[isFar ? "far" : "fas", name]}
+    />
+  </div>
 );
 
 export default Icon;
