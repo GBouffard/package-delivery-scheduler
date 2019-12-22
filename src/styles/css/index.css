@@ -20,13 +20,17 @@ body {
 }
 
 .delivery-option {
-  position: relative;
+  background: white;
+  height: 50px;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
 .icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
 .delivery-option__icon {
@@ -35,7 +39,21 @@ body {
 }
 
 .question-mark-icon {
-  bottom: -3px;
+  left: 12px;
+  top: 6px;
+}
+
+.delivery-option__text-container {
+  font-size: 12px;
+  padding: 11px 0 11px 60px;
+}
+
+.one-line-height {
+  padding: 18px 0 18px 60px;
+}
+
+.subText {
+  color: grey;
 }
 
 /*# sourceMappingURL=index.css.map */
