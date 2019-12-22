@@ -12,6 +12,23 @@ body {
   padding: 5px 0;
   border-radius: 5px;
   box-shadow: 0 0 8px grey;
+  margin: 10px 0 0 10px;
+}
+
+#desktop-filler__container {
+  overflow-y: hidden;
+  padding: 0 10px;
+  margin: -5px 0;
+  height: calc(100vh - 404px);
+}
+
+#desktop-filler__fill {
+  position: relative;
+  background: whitesmoke;
+  width: 300px;
+  box-shadow: 0 0 8px grey;
+  height: 100%;
+  z-index: 100;
 }
 
 #delivery-footer {
@@ -22,6 +39,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 8px grey;
   bottom: 0;
+  margin: 0 0 10px 10px;
 }
 
 #delivery-information {
