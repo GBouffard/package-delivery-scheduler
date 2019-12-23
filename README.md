@@ -30,13 +30,12 @@ npm start
 - ES6
 - Create-react-app
 - React
-- React-Dom
+- React-DOM
 - Sass
 - Flexbox
-- Font-awesome
-- Google-maps-react
-
-- Still to add: React-geocode
+- Font-Awesome
+- Google Maps React
+- React Geocode
 
 ## previews:
 
@@ -44,4 +43,4 @@ Desktop:
 ![](public/images/desktop_screenshot.png)
 
 Mobile:
-![](public/images/mobile_screenshot.png =480x)
+![](public/images/mobile_screenshot.png)
