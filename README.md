@@ -24,26 +24,24 @@ touch .env && echo \"REACT_APP_GOOGLE_MAP_API_KEY=''\" > .env
 npm start
 ```
 
-<!--
-## <!-- Technologies used:
+## Technologies used:
 
 - JavaScript
-- ES6 syntax
-- create-react-app
+- ES6
+- Create-react-app
 - React
 - React-Dom
-- prop-types
-- classname
-- HTML Semantic (JSX)
-- CSS
+- Sass
 - Flexbox
-- Jest
-- sessionStorage -->
+- Font-awesome
+- Google-maps-react
 
-## <!-- previews:
+- Still to add: React-geocode
+
+## previews:
 
 Desktop:
 ![](public/images/desktop_screenshot.png)
 
 Mobile:
-![](public/images/mobile_screenshot.png) --> -->
+![](public/images/mobile_screenshot.png)

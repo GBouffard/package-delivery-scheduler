@@ -5,8 +5,8 @@ import DeliveryOption from "./common/delivery-option";
 const DeliveryAddress = () => (
   <DeliveryOption
     icons={[{ name: "map-marker-alt", isFar: false }]}
-    text="2400 Green St"
-    subtext="CA 94123"
+    text="Champ de Mars, 5 Avenue Anatole"
+    subtext="France, 75007 Paris, France"
   />
 );
 
