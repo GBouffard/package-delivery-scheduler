@@ -4,14 +4,19 @@ import Icon from "../../atoms/icon";
 import Text from "../../atoms/text";
 import Link from "../../atoms/link";
 
-const classname = "delivery-option";
-
-const DeliveryOption = ({ icons, text, subtext, link }) => (
-  <div className={classname}>
+const DeliveryOption = ({
+  icons,
+  text,
+  subtext,
+  link,
+  onClick,
+  deliveryOptionClass
+}) => (
+  <div className={`delivery-option ${deliveryOptionClass}`} onClick={onClick}>
     {icons &&
       icons.map(({ name, isFar, isSmall }) => (
         <Icon
-          iconClass={`${classname}__icon`}
+          iconClass="delivery-option__icon"
           key={name}
           name={name}
           isFar={isFar}
@@ -23,11 +28,11 @@ const DeliveryOption = ({ icons, text, subtext, link }) => (
       <Text
         text={text}
         subtext={subtext}
-        textClass={`${classname}__text-container`}
+        textClass="delivery-option__text-container"
       />
     )}
 
-    {link && <Link link={link} linkClass={`${classname}__link`} />}
+    {link && <Link link={link} linkClass="delivery-option__link" />}
   </div>
 );
 

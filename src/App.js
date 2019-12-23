@@ -22,8 +22,10 @@ const reLoadMap = selectedLocation =>
 const App = () => {
   const [placeName, setPlaceName] = useState(placesList[0]);
   const [selectedLocation, setSelectedLocation] = useState(defaultLocation);
+  let dropdown;
 
   const onChange = e => {
+    dropdown.style.display = "none";
     setPlaceName(e.target.value);
     Geocode.fromAddress(e.target.value).then(
       response => {
@@ -37,6 +39,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    dropdown = document.getElementsByClassName("place-selector")[0];
     const mapLoader = setInterval(() => {
       reLoadMap(selectedLocation);
     }, 1000);
@@ -45,6 +48,10 @@ const App = () => {
       clearInterval(mapLoader);
     };
   });
+
+  const showDropdown = () => {
+    dropdown.style.display = "block";
+  };
 
   return (
     <div>
@@ -58,7 +65,7 @@ const App = () => {
         onChange={onChange}
         dropdownClass="place-selector"
       />
-      <DeliveryFooter selectedPlace={placeName} />
+      <DeliveryFooter onClick={showDropdown} selectedPlace={placeName} />
     </div>
   );
 };

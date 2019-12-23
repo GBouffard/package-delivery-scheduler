@@ -100,6 +100,13 @@ body {
   }
 }
 
+.delivery-address {
+  cursor: pointer;
+}
+.delivery-address:hover {
+  box-shadow: 0 0 8px blue;
+}
+
 .icon-container {
   position: relative;
   top: 10px;
@@ -178,6 +185,7 @@ body {
 }
 
 .place-selector {
+  display: none;
   position: absolute;
   z-index: 100;
   bottom: 140px;

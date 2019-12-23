@@ -5,7 +5,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: lightgreen;
+  background: $mapLoadingColor;
   font-family: sans-serif;
   margin: 0;
 }
@@ -79,6 +79,14 @@ body {
   }
 }
 
+.delivery-address {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 8px $linkColor;
+  }
+}
+
 .icon-container {
   position: relative;
   top: 10px;
@@ -111,7 +119,7 @@ body {
 .delivery-option__link {
   position: absolute;
   @include smallFont;
-  color: blue;
+  color: $linkColor;
   top: 18px;
   right: 15px;
 }
@@ -155,6 +163,7 @@ body {
 }
 
 .place-selector {
+  display: none;
   position: absolute;
   z-index: 100;
   bottom: 140px;
