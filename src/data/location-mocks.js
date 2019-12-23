@@ -1,3 +1,9 @@
+// the Eiffel tower
+const defaultLocation = {
+  lat: 48.858608,
+  lng: 2.294471
+};
+
 const postcodeMap = {
   "Eiffel Tower": "75007 Paris, France",
   "Great Wall of China": "Huairou, China",
@@ -12,4 +18,4 @@ const postcodeMap = {
 
 const placesList = Object.keys(postcodeMap);
 
-export { postcodeMap, placesList };
+export { defaultLocation, postcodeMap, placesList };
