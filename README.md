@@ -44,4 +44,4 @@ Desktop:
 ![](public/images/desktop_screenshot.png)
 
 Mobile:
-![](public/images/mobile_screenshot.png)
+![](public/images/mobile_screenshot.png =480x)
