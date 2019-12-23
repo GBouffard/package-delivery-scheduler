@@ -3,19 +3,14 @@ import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
 const baseUrl = process.env.PUBLIC_URL;
 
-// the Eiffel tower
-const defaultPosition = {
-  lat: 48.858608,
-  lng: 2.294471
-};
-
-export const MapContainer = ({ google, position = defaultPosition }) => (
+export const MapContainer = ({ google, position }) => (
   <Map
     //   mapTypeId={"terrain"}
     google={google}
     zoom={16}
     className="delivery-map"
     initialCenter={position}
+    center={position}
     zoomControl={false}
     rotateControl={false}
     scaleControl={false}
@@ -25,6 +20,7 @@ export const MapContainer = ({ google, position = defaultPosition }) => (
   >
     <Marker
       name={"delivery address"}
+      position={position}
       icon={`${baseUrl}/images/custom-blue-dot-marker.png`}
     />
   </Map>

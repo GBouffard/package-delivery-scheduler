@@ -1,12 +1,13 @@
 import React from "react";
 
 import DeliveryOption from "./common/delivery-option";
+import { postcodeMap } from "../../data/location-mocks";
 
-const DeliveryAddress = () => (
+const DeliveryAddress = ({ selectedPlace }) => (
   <DeliveryOption
     icons={[{ name: "map-marker-alt", isFar: false }]}
-    text="Champ de Mars, 5 Avenue Anatole"
-    subtext="France, 75007 Paris, France"
+    text={selectedPlace}
+    subtext={postcodeMap[selectedPlace]}
   />
 );
 

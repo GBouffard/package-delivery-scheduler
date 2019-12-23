@@ -177,4 +177,16 @@ body {
   padding-right: 10px;
 }
 
+.place-selector {
+  position: absolute;
+  z-index: 100;
+  bottom: 140px;
+  left: 30%;
+}
+@media screen and (min-width: 480px) {
+  .place-selector {
+    left: 75px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

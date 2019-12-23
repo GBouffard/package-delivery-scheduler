@@ -3,9 +3,9 @@ import React from "react";
 import DeliveryAddress from "../molecules/delivery-address";
 import DeliveryNotification from "../molecules/delivery-notification";
 
-const DeliveryFooter = () => (
+const DeliveryFooter = ({ selectedPlace }) => (
   <div id="delivery-footer">
-    <DeliveryAddress />
+    <DeliveryAddress selectedPlace={selectedPlace} />
     <DeliveryNotification />
   </div>
 );
