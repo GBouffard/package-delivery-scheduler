@@ -44,3 +44,12 @@ Desktop:
 
 Mobile:
 ![](public/images/mobile_screenshot.png)
+
+## How to change the delivery address:
+
+So far restrictions have been added to the selected delivery locations - address autocomplete is not available yet. You can change the location this way:
+
+- Click on the delivery address
+- A dropdown meny with a list of known address will open
+- select one of the address.
+- Geocode will update coordinates and Google map will load the new map in its center
