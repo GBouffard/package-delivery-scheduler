@@ -19,6 +19,7 @@
     "react-scripts": "3.3.0",
     "sass": "^1.24.0"
   },
+  "homepage": "https://gbouffard.github.io/package-delivery-scheduler/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
