@@ -8,6 +8,10 @@ a simple 1-pager webpage for recipients to see what time their package is schedu
 - Changing delivery time and subscribing to notifications are just mock ups for now.
 - The user is able to add notes to the delivery.
 
+## Deployed Link (Github Pages):
+
+[Guillaume's Package delivery scheduler](https://gbouffard.github.io/package-delivery-scheduler/)
+
 ## How to run it locally:
 
 ```
