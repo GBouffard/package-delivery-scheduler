@@ -40,6 +40,8 @@ const App = () => {
 
   useEffect(() => {
     dropdown = document.getElementsByClassName("place-selector")[0];
+    // an addevent listener instead?
+    // Also need useRef
     const mapLoader = setInterval(() => {
       reLoadMap(selectedLocation);
     }, 1000);
