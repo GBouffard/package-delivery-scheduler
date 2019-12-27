@@ -9,4 +9,4 @@ cache:
     - packages/react-scripts/node_modules
 
 script:
-  - npm start
+  - npm run build
