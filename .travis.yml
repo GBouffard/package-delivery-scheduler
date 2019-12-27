@@ -7,6 +7,5 @@ cache:
   directories:
     - "node_modules"
 
-before_install:
-  - yarn add fsevents@1.2.8
-# because it looks like it was removed in create-react-app
+script:
+  - npm start
