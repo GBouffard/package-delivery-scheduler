@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/GBouffard/package-delivery-scheduler.svg?branch=master)](https://travis-ci.com/GBouffard/package-delivery-scheduler)
+
 # :package: Package delivery scheduler :package:
 
 This is Guillaume's package delivery scheduler:
